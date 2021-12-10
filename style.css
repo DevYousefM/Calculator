@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#2196f3, #e91e63);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container input[type="text"] {
+  width: 100%;
+  height: 100px;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 0 3px;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 15px;
+  background: transparent;
+}
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.buttonsB {
+  width: 95%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+.buttonsB .btn {
+  height: 65px;
+  color: white;
+  width: calc(100% / 4 - 5px);
+  background: transparent;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-top: 21.5px;
+  text-align: center;
+  user-select: none;
+}
+.buttonsB .btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

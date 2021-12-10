@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="answer" class="answer" />
+      <div class="buttons">
+        <div class="buttonsB">
+          <span class="btn" id="delAll" onclick="answer.value = '' ">AC</span>
+          <span
+            class="btn"
+            id="delOne"
+            onclick="answer.value = answer.value.substr(0 , answer.value.length -1) "
+            >DEL</span
+          >
+          <span class="btn" onclick="answer.value += '%' ">%</span>
+          <span class="btn" onclick="answer.value += '/' ">/</span>
+        </div>
+        <div class="buttonsB">
+          <span class="btn" onclick="answer.value += '7' ">7</span>
+          <span class="btn" onclick="answer.value += '8' ">8</span>
+          <span class="btn" onclick="answer.value += '9' ">9</span>
+          <span class="btn" onclick="answer.value += '*' ">*</span>
+        </div>
+        <div class="buttonsB">
+          <span class="btn" onclick="answer.value += '4' ">4</span>
+          <span class="btn" onclick="answer.value += '5' ">5</span>
+          <span class="btn" onclick="answer.value += '6' ">6</span>
+          <span class="btn" onclick="answer.value += '-' ">-</span>
+        </div>
+        <div class="buttonsB">
+          <span class="btn" onclick="answer.value += '1' ">1</span>
+          <span class="btn" onclick="answer.value += '2' ">2</span>
+          <span class="btn" onclick="answer.value += '3' ">3</span>
+          <span class="btn" onclick="answer.value += '+' ">+</span>
+        </div>
+        <div class="buttonsB">
+          <span class="btn" onclick="answer.value += '0' ">0</span>
+          <span class="btn" onclick="answer.value += '00' ">00</span>
+          <span class="btn" onclick="answer.value += '.' ">.</span>
+          <span class="btn" onclick="answer.value = eval(answer.value) "
+            >=</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
